@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto, Texto e Áudio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('vermelho.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .texto {
+            margin-right: 20px; /* Espaço à direita para a segunda foto */
+            width: 400px; /* Largura do retângulo */
+            height: 300px; /* Altura do retângulo */
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ff69b4; /* Cor rosa: #ff69b4 */
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+            overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+        }
+        .foto {
+            width: 400px; /* Largura da foto */
+            height: 300px; /* Altura da foto */
+            border-radius: 5px;
+            overflow: hidden; /* Impede que a imagem ultrapasse os limites */
+        }
+        .foto img {
+            width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+            height: 100%;
+            object-fit: cover; /* Redimensiona a imagem para cobrir todo o espaço da div */
+        }
+        .texto-view {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; /* Define a fonte do texto */
+            font-size: 14px; /* Define o tamanho da fonte */
+            overflow: auto; /* Adiciona barra de rolagem se necessário */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="texto">
+            <div class="texto-view" contenteditable="false">
+                Oi mãe, esperei todo esse tempo para escrever o que eu sinto e o momento é agora de dizer, hoje a senhora me disse que se sentia nada mas a senhora pra mim é tudo. uma mulher de respeito que enfrentou diversas dificuldades e muita das vezes sozinha e calada, uma mãe solteira e batalhadora que por mais que teve dificuldades nunca abandonou seus filhos. A senhora foi tanto minha mãe como meu pai, Me ensinou o amor como uma mãe e me instruiu como é o mundo la fora como um pai. A senhora foi sempre um exemplo pra mim e absorvo cada conselho que a senhora me da, se um dia eu me senti perdido você é a minha luz no fim do tunel. se um dia todo mundo virar as costas para mim, eu sei que a senhora vai ta la para me apoiar. Desde pequeno a senhora moldou minha infancia para que eu fosse feliz, indenpendente da situação nunca deixou passar um aniversário, toda apresentação que eu fizesse eu podia olhar pro palco e senhora tava lá me olhando feliz. sempre me deu presentes para me agradar mesmo não tendo condições, me dava banhos e cuidava e cuida com o maior carinho. Por isso e tudo mais o que a senhora fez para mim, você vai ser sempre meu mundo, meu pilar, minha inspiração e sempre que puder vou expressar minha gratidão. Só o ato de a senhora ter feito tudo isso sem reclamar ou pedir algo em troca, mostra que foi tudo por amor ao seus filhos. O meu principal motivo de querer vencer na vida é para dar uma vida melhor para senhora e retribuir tudo que você fez e vem fazendo por mim. Em 2022 a gente teve uma perda muito significativa para nós, a senhora perdeu sua mãe e eu perdi minha vó, eu a considerava como uma segunda mãe. No final de tudo eu não consegui dizer pra ela o tanto quanto eu amava tambem. queria fornecer uma vida melhor para duas. O que me resta é olhar para frente e ver os que ainda estão comigo. carrego a dor de ter perdido alguém importante e não quero perder denovo. quero poder dizer o quanto te amo sem ter medo do amanhã e poder deitar na cama com a consciencia limpa porque consegui dizer tudo que queria. mãe, seu pequeno sempre vai estar aqui te esperando com abraço e beijos e no fundo eu sempre vou ser aquela criança chorona que quer ta do lado da mãe. Pra sempre vou te amar, com carinho Roger.
+            </div>
+        </div>
+        <div class="foto">
+            <img src="mãe.jpg" alt="Sua Outra Foto">
+        </div>
+    </div>
+
+    <audio autoplay controls>
+        <source src="roberto.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+</body>
+</html>
+
